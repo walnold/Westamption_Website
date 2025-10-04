@@ -1,0 +1,71 @@
+.welcome-hero {
+  height: 100vh;
+  width: 100%;
+
+  background-image: url("../assets/boardseats.jpg");
+  background-color: rgba(42, 43, 42, 0.9);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  /* position: relative; */
+  padding: 10rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all ease-in;
+}
+
+.welcome-hero h2 {
+  font-size: 3rem;
+  animation: fade-up 2s;
+  animation-delay: 1s;
+}
+
+.welcome-hero h1 {
+  font-size: 5rem;
+  
+  animation-delay: 2s;
+}
+
+.welcome-hero p {
+  font-size: 2rem;
+  animation-delay: 3s;
+}
+
+.fade-in {
+  position: relative;
+  animation: fade-in 2s;
+}
+
+
+
+.fade-up{
+    position: relative;
+    animation: fade-up 2s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.5;
+    left: -100px;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    bottom: -20px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+
