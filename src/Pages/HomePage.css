@@ -1,71 +1,86 @@
+/* -------- Base Hero Section -------- */
 .welcome-hero {
   height: 100vh;
   width: 100%;
 
   background-image: url("../assets/boardseats.jpg");
-  background-color: rgba(42, 43, 42, 0.9);
+  background-color: rgba(42, 43, 42, 0.9); /* dark overlay */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
-  /* position: relative; */
+
   padding: 10rem;
   color: #fff;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: all ease-in;
+  position: relative;
 }
 
+/* -------- Text Styling -------- */
 .welcome-hero h2 {
   font-size: 3rem;
-  animation: fade-up 2s;
-  animation-delay: 1s;
+  animation: fade-in 2s ease-in forwards;
 }
 
 .welcome-hero h1 {
   font-size: 5rem;
-  
-  animation-delay: 2s;
+  margin-top: 0.5rem;
+  color:#83BF56 ;
+  animation: fade-up 2s ease-in forwards;
 }
 
 .welcome-hero p {
   font-size: 2rem;
-  animation-delay: 3s;
+  max-width: 700px;
+  margin-top: 1rem;
+  animation: fade-in 2s ease-in forwards;
 }
 
+/* -------- Animation Classes -------- */
+
+
+/* fade-in: slide in from left */
 .fade-in {
-  position: relative;
-  animation: fade-in 2s;
+  transform: translateX(-100px);
+  animation: fade-in 2s ease;
 }
 
-
-
-.fade-up{
-    position: relative;
-    animation: fade-up 2s;
+/* fade-up: rise from below */
+.fade-up {
+  transform: translateY(20px);
+  animation: fade-up 2s ease-in;
 }
 
+/* Delay utilities for staggering animations */
+.fade-delay-2 {
+  animation-delay: 2s;
+}
+.fade-delay-4 {
+  animation-delay: 4s;
+}
+
+/* -------- Keyframes -------- */
 @keyframes fade-in {
   from {
-    opacity: 0.5;
-    left: -100px;
+    opacity: 0;
+    transform: translateX(-100px);
   }
   to {
+    transform: translateX(0);
     opacity: 1;
-    left: 0px;
   }
 }
 
 @keyframes fade-up {
   from {
-    bottom: -20px;
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    bottom: 0;
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
-

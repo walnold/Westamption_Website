@@ -1,0 +1,37 @@
+.content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.overview {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  /* border: #83BF56 1px solid; */
+}
+
+/* .overview::before {
+  content: "";
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 120%;
+  left: -10%;
+  margin: 0 auto;
+  align-self: center;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.8);
+} */
+
+.overview h2 {
+  font-weight: 700;
+  color: #83bf56;
+  font-size: 3rem;
+}
+
+.overview p {
+  font-size: 1.7rem;
+  max-width: 1000px;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}

@@ -1,20 +1,29 @@
 import React from "react";
 import "./HomePage.css";
+import Overview from "../components/Homepage/Overview/Overview";
+import Expartise from "../components/Homepage/Expartise/Expartise";
 
 const HomePage = () => {
   return (
-   <>
-    <div className="welcome-hero">
-      <h2 className="fade-in">Welcome to </h2>
-      <h1 className="fade-up">WESTAMPTON SOLUTIONS</h1>
-      <p className="fade-in">
+    <div className="home">
+      {/* hero */}
+      <div className="welcome-hero">
+      <h2 className="fade-in">Welcome to</h2>
+      <h1 className=" fade-delay-2">WESTAMPTON SOLUTIONS</h1>
+      <p className=" fade-delay-4">
         Your premier partner for market entry and business expansion in Kenya
         and the broader sub-Saharan Africa region.
       </p>
     </div>
 
-    
-   </>
+    {/* overview */}
+    <section className="container">
+
+    <Overview />
+    <Expartise/>
+    </section>
+    </div>
+
   );
 };
 

@@ -7,19 +7,22 @@
   scroll-behavior: smooth;
   font-family: Roboto;
 }
+body{
+  background: #f5f7f5;
+}
 
 nav {
   display: flex;
+  /* position: absolute; */
   gap: 4rem;
   padding: 0.8rem 1rem;
   align-items: center;
   justify-content: center;
   margin-bottom: 10rem;
   width: 100%;
-  /* background:rgba(205, 233, 205, 0.9); */
+  background: rgb(26, 26, 26);
   justify-content: space-between;
   color: #fff;
-
 }
 
 .logo img {
@@ -34,9 +37,10 @@ nav {
   /* width: 90%; */
 }
 
-.nav{
+.nav {
   position: fixed;
   z-index: 10;
+  top: 0;
 }
 
 .navs {
@@ -49,4 +53,25 @@ nav {
   font-size: 1.2em;
 }
 
+.container {
+  /* max-width: 900px;   */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
 
+h2{
+   font-weight: 700;
+    color: #83BF56 ;
+    font-size: 3rem;
+}
+
+/* p{
+  font-size: 1.7rem;
+    max-width: 1000px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+} */
