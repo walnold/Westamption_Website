@@ -1,4 +1,4 @@
-export const expartise = [
+export const expartiseItems = [
   {
     header: "Market Entry & Business Development",
     content:

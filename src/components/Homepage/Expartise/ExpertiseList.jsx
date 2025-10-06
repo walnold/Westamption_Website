@@ -1,17 +1,37 @@
 import React from "react";
-import { expartise } from "./Expartise";
+import { expartiseItems } from "./Expartise.js";
 import "./ExpartiseList.css";
 
 const ExpertiseList = () => {
-  return (
-    <div className="services-container">
-      {expartise.map((e, index) => (
-        <div key={index} className="service-card">
-          <h3>{e.header}</h3>
-          <p>{e.content}</p>
+  console.log("inside list");
+  console.log("Full expartise array:", expartiseItems);
+
+  // return (
+  //   <div className="services-container">
+  //     {expartiseItems.map((item, index) => (
+  //       <div key={index} className="service-card">
+  //         <h3>{item.header}</h3>
+  //         <p>{item.content}</p>
+  //       </div>
+  //     ))}
+  //   </div>
+  // );
+
+ 
+
+  return(
+      <div className="services-container">
+        
+        {expartiseItems.map((item,index)=> (
+        <div key={index} className="service-item">
+          <h3>{item.header}</h3>
+          <p>{item.content}</p>
         </div>
-      ))}
-    </div>
+        )
+         
+        )
+      }
+      </div>
   );
 };
 

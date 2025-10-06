@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import Overview from "../components/Homepage/Overview/Overview";
 import ServicesList from "../components/Homepage/Servies/ServiceList";
-// import Expartise from "../components/Homepage/Expartise/Expartise";
+import Expartise from "../components/Homepage/Expartise/Expartise.jsx";
 
 const HomePage = () => {
   return (
@@ -20,9 +20,9 @@ const HomePage = () => {
       {/* overview */}
       <section className="container">
         <Overview />
-        {/* <Expartise /> */}
+        <Expartise />
         <ServicesList/>  
-           </section>
+      </section>
     </div>
   );
 };

@@ -8,6 +8,7 @@ const Expartise = () => {
       <div className="expartise content">
         <h2>Our Expartise</h2>
         <div className="services">
+          
           <ExpartiseList />
         </div>
       </div>
