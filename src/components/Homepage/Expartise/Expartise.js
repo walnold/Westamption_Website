@@ -1,4 +1,4 @@
-export const services = [
+export const expartise = [
   {
     header: "Market Entry & Business Development",
     content:

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Expartise.css";
-import ServicesList from "./ServiceList";
-
+import ExpartiseList from "./ExpertiseList.jsx";
 
 const Expartise = () => {
   return (
@@ -9,7 +8,7 @@ const Expartise = () => {
       <div className="expartise content">
         <h2>Our Expartise</h2>
         <div className="services">
-            <ServicesList />
+          <ExpartiseList />
         </div>
       </div>
     </section>
