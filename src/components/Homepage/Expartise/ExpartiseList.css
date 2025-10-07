@@ -10,18 +10,29 @@
 
 .service-item {
   background: #ffffff;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 20rem ;
+  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+  height: 20rem;
+}
+
+.service-item:hover {
+  /* border: 1px solid #000; */
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) inset,-5px -5px 5px rgba(0, 0, 0, 0.1) inset ;
 }
 
 .service-item h3 {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   color: #1a3e59;
+}
+
+.service-item:hover h3{
+  color: #83bf56;
+  font-weight: 600;
 }
 
 .service-item p {

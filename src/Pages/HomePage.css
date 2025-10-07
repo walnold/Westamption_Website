@@ -17,6 +17,8 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+
+  box-shadow: 0px 50px 40px rgba(173, 196, 151, 0.654);
 }
 
 /* -------- Text Styling -------- */
@@ -83,4 +85,56 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 500px){
+    .welcome-hero{
+
+        padding: 2rem 1rem;
+        width: 100%;
+
+    }
+
+    .welcome-hero h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .welcome-hero h1{
+        font-size: 3rem;
+    }
+
+    .welcome-hero p{
+        font-size: 1.4rem;
+    }
+
+    .home .container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .welcome-hero{
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+
+    .welcome-hero h2{
+        font-size: 2.5rem;
+
+    }
+
+    .welcome-hero h1{
+        font-size: 3rem;
+    }
+
+    .welcome-hero p{
+        font-size: 1.5rem;
+    }
 }
