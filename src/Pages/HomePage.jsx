@@ -3,6 +3,7 @@ import "./HomePage.css";
 import Overview from "../components/Homepage/Overview/Overview";
 import ServicesList from "../components/Homepage/Servies/ServiceList";
 import Expartise from "../components/Homepage/Expartise/Expartise.jsx";
+import About from "../components/Homepage/About/About.jsx";
 
 const HomePage = () => {
   return (
@@ -21,7 +22,8 @@ const HomePage = () => {
       <section className="container">
         <Overview />
         <Expartise />
-        <ServicesList/>  
+        <ServicesList/> 
+        <About/> 
       </section>
     </div>
   );

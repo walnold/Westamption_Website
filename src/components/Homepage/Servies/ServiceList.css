@@ -1,3 +1,4 @@
+/* ===== General Section ===== */
 .services-section {
   padding: 3rem 2rem;
   background: #f7f9fa;
@@ -6,19 +7,21 @@
 
 .services-title {
   font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 2rem;
-  color: #333;
+  color: #6eaa6e;
+  font-family: "Roboto", sans-serif; /* Good corporate font */
 }
 
-/* ✅ Responsive Flex Layout */
+/* ===== Flex Layout ===== */
 .services-flex {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centers items */
+  justify-content: center;
   gap: 2rem;
 }
 
-/* ✅ Service Card Styles */
+/* ===== Service Card ===== */
 .service-card {
   background: #fff;
   width: 300px;
@@ -26,9 +29,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0; /* for fade animation */
+  opacity: 0; /* start hidden */
   transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
@@ -56,25 +59,25 @@
   color: #555;
 }
 
-/* ✅ Animation */
+/* ===== Lazy Image States ===== */
+.service-img.loading {
+  filter: blur(5px);
+  opacity: 0.4;
+  transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.service-img.loaded {
+  filter: blur(0);
+  opacity: 1;
+}
+
+/* ===== Animation Classes ===== */
 .fade-in-on-scroll {
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.3s;
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* keyframes for fade-in */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ✅ Responsive Adjustments */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .service-card {
     width: 90%;

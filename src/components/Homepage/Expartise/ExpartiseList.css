@@ -11,17 +11,18 @@
 .service-item {
   background: #ffffff;
   /* border: 1px solid #000; */
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 1.5rem;
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in;
+  transition: all 0.5s ease-in;
   height: 20rem;
 }
 
 .service-item:hover {
   /* border: 1px solid #000; */
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) inset,-5px -5px 5px rgba(0, 0, 0, 0.1) inset ;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1) inset,
+    -5px -5px 5px rgba(0, 0, 0, 0.1) inset;
 }
 
 .service-item h3 {
@@ -30,7 +31,7 @@
   color: #1a3e59;
 }
 
-.service-item:hover h3{
+.service-item:hover h3 {
   color: #83bf56;
   font-weight: 600;
 }
